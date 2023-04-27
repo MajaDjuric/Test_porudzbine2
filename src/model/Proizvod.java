@@ -77,6 +77,9 @@ public class Proizvod {
 		this.naziv = naziv;
 	}
 	public double getCena() {
+		if (!isBesplatnaDostava()) {
+			return cena + 1000;
+		}
 		return cena;
 	}
 	public void setCena(double cena) {

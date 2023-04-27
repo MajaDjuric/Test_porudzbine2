@@ -46,13 +46,6 @@ public class StavkaIzvestaja {
 	public void setDatumPoslednjeProdaje(LocalDateTime datumPoslednjeProdaje) {
 		this.datumPoslednjeProdaje = datumPoslednjeProdaje;
 	}
-
-
-	@Override
-	public String toString() {
-		return "Sifra:" + sifra + "   Naziv: " + naziv + "   Ukupan prihod: " + ukupanPrihod
-				+ "   Datum poslednje prodaje: " + Konzola.formatiraj(datumPoslednjeProdaje) ;
-	}
 	
 	
 	public static int compareUkupanPrihod(StavkaIzvestaja stavka1, StavkaIzvestaja stavka2) {

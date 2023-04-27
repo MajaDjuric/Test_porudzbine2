@@ -27,6 +27,8 @@ public class Application {
 		PorudzbinaUI.setProizvodDAO(proizvodDAO);
 		IzvestajUI.setPorudzbinaDAO(porudzbinaDAO);
 		IzvestajUI.setProizvodDAO(proizvodDAO);
+		Izvestaj2.setPorudzbinadao(porudzbinaDAO);
+		Izvestaj2.setProizvoddao(proizvodDAO);
 		
 	}
 
@@ -64,7 +66,7 @@ public class Application {
 				new FunkcionalnaStavkaMenija("Izvestavanje") {
 
 					@Override
-					public void izvrsi() { IzvestajUI.izvestaj();}
+					public void izvrsi() { Izvestaj2.izvestaj();}
 					
 				}
 			});
